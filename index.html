@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet SIG - Webmapping</title>
+    <link rel="stylesheet" href="mise_en_page_css.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="top-header">
+        <h1>L'accessibilité des espaces verts à pied dans la ville du Mans </h1>
+    </div>
+
+    <!-- MENU -->
+    <nav class="navbar">
+        <ul>
+            <li class="menu1">
+                <h4><a href="#carte1">Densité</a></h4>
+            </li>
+            <li class="menu1">
+                <h4><a href="#carte2">Accessibilité 5 minutes</a></h4>
+            </li>
+            <li class="menu1">
+                <h4><a href="#carte3">Accessibilité 10 minutes</a></h4>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="hero">
+    <h1><strong> Introduction</strong> </h1>
+    <h2>Comment l’accès piéton aux espaces verts façonne-t-il les inégalités environnementales au Mans ?</h2>
+</section>
+
+<section class="bloc">
+    <h2>Contexte</h2>
+    <p>Au-delà de leurs apports écologiques, les espaces verts jouent également un rôle social majeur. Ils participent au bien-être des populations, favorisent les pratiques de loisirs et constituent des lieux de sociabilité. Cependant, leur répartition au sein des espaces urbains n’est pas toujours homogène et peut révéler des inégalités socio-spatiales importantes. L’accessibilité à ces espaces, particulièrement en termes de distance ou de temps de trajet, est ainsi un indicateur pertinent pour analyser les inégalités environnementales urbaines. La ville du Mans, située dans l’ouest de la France, se caractérise par une forte présence de nature en ville. Selon une étude de l’INSEE, 55 % des Manceaux disposent d’un accès à un espace vert en moins de cinq minutes à pied. Si ce chiffre témoigne d’une offre relativement importante, il reste néanmoins global et ne permet pas de rendre compte des éventuelles disparités entre les différents quartiers ou groupes de population </p>
+</section>
+
+<!-- ================= CARTE 1 ================= -->
+<section class="bloc carte" id="carte1">
+    <div class="text-carte">
+        
+        <!-- Texte à gauche -->
+        <div class="texte">
+            <h2>Densité de la population</h2>
+            <p>Cette carte révèle une organisation relativement classique de l’espace urbain, marquée par une concentration de la population dans les secteurs centraux et péricentraux. On observe notamment une forte densité dans la partie nord et centre de la ville, qui s’étend en direction du sud-est. Ces espaces correspondent aux zones les plus urbanisées, caractérisées par une présence importante d’habitat collectif et de fonctions urbaines. À l’inverse, les périphéries apparaissent globalement moins denses, traduisant des formes d’habitat plus diffus, souvent associées à des quartiers pavillonnaires ou à des zones d’activités.
+Cette carte constitue un élément clé de l’analyse, dans la mesure où elle permet d’identifier les secteurs où la demande potentielle en espaces verts est la plus forte. </p>
+        </div>
+
+        <!-- Carte à droite -->
+        <div class="carte-container">
+            <iframe src="qgis2web_densite2/index.html" class="mapframe"></iframe>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CARTE 2 ================= -->
+<section class="bloc carte" id="carte2">
+    <div class="text-carte">
+        
+        <!-- Carte à gauche -->
+        <div class="carte-container">
+            <iframe src="qgis2web_5min/index.html" class="mapframe"></iframe>
+        </div>
+
+        <!-- Texte à droite -->
+        <div class="texte">
+            <h2>Zones accessibles en 5 minutes</h2>
+            <p>L’analyse montre que les zones les plus denses, notamment le centre-ville, bénéficient d’une accessibilité élevée à moins de 5 minutes. Cette situation s’explique par la présence de nombreux espaces verts de petite taille, répartis de manière relativement homogène dans ces secteurs. On observe ainsi une correspondance entre les zones de forte densité de population et les zones bien desservies.
+Par ailleurs, la forme des zones accessibles présente une certaine similarité avec la répartition de la densité de population, ce qui traduit une proximité spatiale entre les espaces de vie et les espaces de verdure.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CARTE 3 ================= -->
+<section class="bloc carte" id="carte3">
+    <div class="text-carte">
+        
+        <!-- Carte à droite -->
+        <div class="carte-container">
+            <iframe src="qgis2web_10min/index.html" class="mapframe"></iframe>
+        </div>
+
+        <!-- Texte à gauche -->
+        <div class="texte">
+            <h2>Zones accessibles en 10 minutes</h2>
+            <p>Cette carte des zones tampons de 10 minutes montre une couverture quasi totale de la ville, indiquant que la grande majorité des habitants dispose d’un accès à un espace vert à pied dans un temps relativement court.
+Cependant, cette accessibilité généralisée doit être nuancée. En effet, certaines zones apparaissent légèrement moins bien desservies, notamment dans les secteurs périphériques ou à dominante industrielle. De plus, cette approche ne prend pas en compte la qualité, la taille ou les usages des espaces verts, qui peuvent fortement varier.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= Conclusion ================= -->
+<section class="bloc carte">
+    <h2><em>Conclusion</em></h2>
+    <h4> L’analyse de l’accessibilité des espaces verts à pied dans la ville du Mans met en évidence une situation globalement favorable. La grande majorité de la population bénéficie d’un accès rapide aux espaces verts, comme en témoignent les taux très élevés observés pour les seuils de 5 et 10 minutes. Par ailleurs l’accessibilité des espaces verts à pied dans la ville du Mans ne constitue pas, a lui seul, un facteur majeur d’inégalités environnementales à l’échelle de la ville du Mans. D’autres dimensions, telles que la qualité ou la surface des espaces verts, pourraient davantage structurer ces inégalités.</h4>
+</section>
+
+<footer>
+    <p>© 2026 – BILLARD Candice</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
